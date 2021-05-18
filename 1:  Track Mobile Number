@@ -1,0 +1,18 @@
+#Libraries used: phonenumbers
+The library used in this code makes sure that we have made the input for mobile number in proper format. 
+
+import phonenumbers
+from phonenumbers import geocoder #Checks for country of the given number.
+from phonenumbers import carrier  #Checks for carrier company 
+
+number = input("Enter a phone number to check location: ")
+ch_number = phonenumbers.parse(number, 'CH')
+print("Country: ")
+print(geocoder.description_for_number(ch_number, 'en')) #Outputs country location
+
+s_number = phonenumbers.parse(number, 'RO')
+print("Sim: ")
+print(carrier.name_for_number(s_number, "en"))    #Outputs Carrier/Sim company
+
+input format : 'country code''10 digit phone number'
+input format : +91 XXXXXXXXXX
