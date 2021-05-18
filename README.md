@@ -1,4 +1,4 @@
 # Python-Projects
 Contains working codes for short projects.
 
-Project - 1: Tracking Number deatils (i.e. Country & Carrier)
+Project - 1: Tracking Number details (i.e. Country & Carrier)
